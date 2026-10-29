@@ -1,6 +1,6 @@
 # Sunny Side Soap Co. demo storefront
 
-A buildless static product page for a handmade oatmeal and honey goat milk soap bar. All brand/product content is fictional. The bag is an in-memory UI demonstration with no checkout, payment collection, storage, or analytics.
+A buildless static product page for a handmade oatmeal and honey goat milk soap bar. All brand/product content is fictional. The bag is an in-memory UI demonstration with no checkout, payment collection, or event tracking. Two TikTok Pixel SDKs are initialized separately from the shopping UI.
 
 Live product URL: https://dandzl.github.io/pixel-03-test-store/products/oatmeal-honey-soap/
 
@@ -8,9 +8,16 @@ The product URL accepts `?trialID=...` without changing page behavior. Visiting 
 
 ## Tracking status
 
-**Pending real Pixel IDs.** No TikTok tracking code is installed, and no events are emitted. This page alone does not establish a two-Pixels-without-events account fixture.
+The following user-supplied Pixel IDs are initialized by `pixel-base.js`:
 
-Before using this for the intended scenario, connect the two real Pixel base codes for Sunny Side Main and Sunny Side Old in the intended test advertiser. Do not add page, product-view, add-to-cart, checkout, purchase, or custom events. Disable automatic events and any event-builder rules in the account. Verify the two Pixels and their absence of configured/received events in Events Manager; do not infer account readiness from this source or the rendered page.
+| Pixel | ID |
+| --- | --- |
+| Sunny-Side-Main | `DBHSTO3C77U4SEFNTBG0` |
+| Sunny-Side-Old | `DBHSUIBC77UASCMGSGIG` |
+
+The loader follows [TikTok's base-code documentation](https://ads.tiktok.com/gateway/docs/index?doc_id=1701890973258754&language=ENGLISH), deliberately omitting its page-view invocation. No page-view, product-view, add-to-cart, checkout, purchase, identify, or custom event calls are included. Loading SDKs still makes requests to TikTok; vendor-side configuration controls automatic behavior.
+
+Before using this for the intended scenario, verify both Pixels belong to the intended test advertiser, disable automatic/assisted events and any event-builder rules in the account, and verify the absence of configured/received events in Events Manager. This page alone does not establish the required account state. Do not infer account readiness from this source or the rendered page.
 
 ## GitHub Pages
 

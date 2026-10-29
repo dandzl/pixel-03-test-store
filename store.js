@@ -1,6 +1,6 @@
 'use strict';
 
-// Deliberately browser-local. No analytics, checkout, or conversion requests.
+// Deliberately browser-local. No event tracking, checkout, or conversion requests.
 const quantity = document.querySelector('#quantity');
 const count = document.querySelector('#bag-count');
 const status = document.querySelector('#cart-status');
