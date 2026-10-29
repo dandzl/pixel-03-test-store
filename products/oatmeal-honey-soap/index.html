@@ -38,8 +38,8 @@
   <a class="skip" href="#product">Skip to product</a>
   <div class="announcement">A little everyday goodness. Handmade, one bar at a time.</div>
   <header class="header">
-    <a class="wordmark" href="../../" aria-label="Sunny Side Soap Co. home"><img src="../../assets/sun.svg" width="38" height="38" alt=""><span>sunny side<span class="wordmark-small">SOAP CO.</span></span></a>
-    <nav aria-label="Main navigation"><a href="#product">The soap</a><a href="#ingredients">The ingredients</a><button class="bag-link" id="open-bag" type="button">Bag <span id="bag-count">0</span></button></nav>
+    <a class="wordmark" href="../../" data-store-link aria-label="Sunny Side Soap Co. home"><img src="../../assets/sun.svg" width="38" height="38" alt=""><span>sunny side<span class="wordmark-small">SOAP CO.</span></span></a>
+    <nav aria-label="Main navigation"><a href="#product">The soap</a><a href="#ingredients">The ingredients</a><a class="bag-link" href="../../cart/" data-store-link>Cart <span data-cart-count>0</span></a></nav>
   </header>
   <main>
     <div class="breadcrumb"><a href="#product">The soap collection</a><span aria-hidden="true">/</span> Oatmeal &amp; Honey</div>
@@ -58,24 +58,19 @@
         <div class="qualities"><span>Creamy lather</span><span>Ground oats</span><span>Handmade</span></div>
         <form id="add-form">
           <label class="quantity-label" for="quantity">Quantity</label>
-          <div class="buy-row"><div class="quantity"><button type="button" id="decrease" aria-label="Decrease quantity">−</button><input id="quantity" name="quantity" type="number" inputmode="numeric" min="1" max="20" value="1" required aria-label="Quantity"><button type="button" id="increase" aria-label="Increase quantity">+</button></div><button class="primary" type="submit">Add to bag <span aria-hidden="true">↗</span></button></div>
+          <div class="buy-row"><div class="quantity"><button type="button" id="decrease" aria-label="Decrease quantity">−</button><input id="quantity" name="quantity" type="number" inputmode="numeric" min="1" max="20" value="1" required aria-label="Quantity"><button type="button" id="increase" aria-label="Increase quantity">+</button></div><button class="primary" type="submit">Add to cart <span aria-hidden="true">↗</span></button></div>
         </form>
         <p class="demo-note">Demo storefront · no real orders or payments</p>
-        <p id="cart-status" class="cart-status" role="status" aria-live="polite"></p>
+        <p id="cart-status" class="cart-status" data-store-status role="status" aria-live="polite"></p>
+        <a id="view-cart" class="text-link" href="../../cart/" data-store-link hidden>View cart &amp; checkout →</a>
         <div class="product-facts"><p><strong>A simple daily ritual.</strong> Wet the bar, work up a lather, rinse well, and let it dry between uses.</p><p><strong>Made with milk &amp; honey.</strong> Contains dairy and bee-derived ingredients. For external use only.</p></div>
       </div>
     </section>
     <section class="ingredients" id="ingredients" aria-labelledby="ingredients-title">
       <div><p class="eyebrow">GOOD THINGS, SIMPLY MADE</p><h2 id="ingredients-title">A short list.<br>A lovely little ritual.</h2></div>
-      <div class="ingredient-details"><p>Goat milk for a creamy lather. Finely ground oatmeal for texture. Honey for that warm, golden touch.</p><details><summary>What's in the bar</summary><p>Illustrative formula: olive oil, coconut oil, goat milk, shea butter, sodium hydroxide (used in soapmaking), finely ground oatmeal, and honey.</p></details><details><summary>How to care for your soap</summary><p>Keep your bar on a draining soap dish and let it dry between uses. Avoid contact with eyes; discontinue use if irritation occurs.</p></details><details><summary>About this storefront</summary><p>Sunny Side Soap Co. is a fictional demonstration brand. Product details and illustrations are sample content. The bag is a browser-only demo; checkout, shipping, and payment collection are unavailable.</p></details></div>
+      <div class="ingredient-details"><p>Goat milk for a creamy lather. Finely ground oatmeal for texture. Honey for that warm, golden touch.</p><details><summary>What's in the bar</summary><p>Illustrative formula: olive oil, coconut oil, goat milk, shea butter, sodium hydroxide (used in soapmaking), finely ground oatmeal, and honey.</p></details><details><summary>How to care for your soap</summary><p>Keep your bar on a draining soap dish and let it dry between uses. Avoid contact with eyes; discontinue use if irritation occurs.</p></details><details><summary>About this storefront</summary><p>Sunny Side Soap Co. is a fictional demonstration brand. Product details and illustrations are sample content. Try the cart and checkout with sample details to create a simulated order. No real orders, shipping, or payments are processed.</p></details></div>
     </section>
   </main>
   <footer><a class="footer-brand" href="#product">sunny side<span aria-hidden="true"> ☼</span></a><p>Small pleasures. A brighter everyday.</p><small>Fictional demo store · United States · USD</small></footer>
-  <dialog id="bag-dialog" aria-labelledby="bag-title">
-    <div class="dialog-heading"><h2 id="bag-title">Your bag</h2><button id="close-bag" class="close" type="button" aria-label="Close bag">×</button></div>
-    <div id="bag-content"></div>
-    <p class="bag-notice">This is a demo. No order is created and no payment is collected.</p>
-    <button id="continue-shopping" class="primary" type="button">Continue shopping</button>
-  </dialog>
 </body>
 </html>

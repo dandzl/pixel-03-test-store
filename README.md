@@ -1,10 +1,19 @@
 # Sunny Side Soap Co. demo storefront
 
-A buildless static product page for a handmade oatmeal and honey goat milk soap bar. All brand/product content is fictional. The bag is an in-memory UI demonstration with no checkout, payment collection, or event tracking. Two TikTok Pixel SDKs are initialized separately from the shopping UI.
+A buildless demo storefront for a handmade oatmeal and honey goat milk soap bar. All brand/product content is fictional. The cart supports quantities and removal, and checkout creates a simulated order confirmation without payment collection or event tracking. Two TikTok Pixel SDKs are initialized on the product page separately from the shopping UI.
 
 Live product URL: https://dandzl.github.io/pixel-03-test-store/products/oatmeal-honey-soap/
 
-The product URL accepts `?trialID=...` without changing page behavior. Visiting the root redirects to the product and preserves the query string and fragment when JavaScript is enabled. All artwork is original SVG included in this repository.
+The product URL accepts `?trialID=...`. Internal shopping links preserve that marker. Cart and receipt data use per-tab session storage, with a separate state for each trial ID, and survive navigation and reloads in that tab. Visiting the root redirects to the product and preserves the query string and fragment when JavaScript is enabled. All artwork is original SVG included in this repository, with a PNG export for the product image.
+
+## Demo shopping flow
+
+- Product: `products/oatmeal-honey-soap/` — add up to 20 bars to the cart.
+- Cart: `cart/` — update quantities, remove the product, and review totals.
+- Checkout: `checkout/` — sample contact/address fields, free demo shipping, and a simulated payment method. Required fields, email format, state abbreviation, and ZIP format are validated in the browser.
+- Confirmation: `order-confirmation/` — a demo order reference, item quantity, illustrative total, and zero amount charged. Placing an order clears the cart; the latest receipt survives a refresh in the same tab.
+
+Only quantity, demo order reference, and timestamp are stored. Contact/address inputs are not saved or submitted to a server. Cart, checkout, and confirmation do not load the Pixel SDK or any external scripts. They do not send tracking events. The product page retains its existing base-only Pixel initialization. No emails, shipments, or real orders are generated, and no card details are requested.
 
 ## Tracking status
 
