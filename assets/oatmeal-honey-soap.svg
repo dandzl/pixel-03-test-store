@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1000" viewBox="0 0 900 1000">
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#ebe8dc"/><stop offset="1" stop-color="#d8d4c4"/></linearGradient>
+ <linearGradient id="soap" x2=".6" y2="1"><stop stop-color="#f2e5c8"/><stop offset=".5" stop-color="#dfc9a1"/><stop offset="1" stop-color="#c5ab80"/></linearGradient>
+ <linearGradient id="top" x2="1" y2="1"><stop stop-color="#f8edd3"/><stop offset="1" stop-color="#e8d7b3"/></linearGradient>
+ <linearGradient id="honey" x2=".2" y2="1"><stop stop-color="#c5923d"/><stop offset=".5" stop-color="#e2b664"/><stop offset="1" stop-color="#b17b2d"/></linearGradient>
+ <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feGaussianBlur stdDeviation="20"/></filter>
+ <pattern id="grain" width="66" height="61" patternUnits="userSpaceOnUse"><ellipse cx="9" cy="12" rx="2.5" ry="1.2" fill="#9d7a41" opacity=".3"/><ellipse cx="42" cy="43" rx="1.6" ry="2.4" fill="#a07c41" opacity=".22"/><ellipse cx="28" cy="27" rx="1.1" ry="1" fill="#fff6df" opacity=".7"/><ellipse cx="58" cy="8" rx="2" ry="1" fill="#967447" opacity=".24"/></pattern>
+</defs>
+<path fill="url(#bg)" d="M0 0h900v1000H0z"/>
+<path d="M0 690 900 444v556H0z" fill="#e7e1d2" opacity=".7"/>
+<path d="M-10 170 910 704M-70 188 850 722" stroke="#f7f5ee" stroke-width="1" opacity=".65"/>
+<g opacity=".55" transform="translate(640 110) rotate(23)"><path d="M0 0v260m0-210-29-24m29 70 32-25m-32 73-32-20m32 68 30-28m-30 67-23-16" fill="none" stroke="#9a9c7e" stroke-width="4"/><g fill="#a8ad87"><ellipse cx="-23" cy="23" rx="12" ry="30" transform="rotate(-39 -23 23)"/><ellipse cx="26" cy="64" rx="12" ry="29" transform="rotate(38 26 64)"/><ellipse cx="-26" cy="118" rx="13" ry="32" transform="rotate(-42 -26 118)"/><ellipse cx="25" cy="161" rx="13" ry="33" transform="rotate(40 25 161)"/></g></g>
+<ellipse cx="437" cy="690" rx="250" ry="61" fill="#70674e" opacity=".25" filter="url(#shadow)"/>
+<g transform="translate(190 353) rotate(-12 240 160)">
+ <path d="M24 50q0-23 22-23h390q22 0 22 23v229q0 24-24 24H48q-24 0-24-24z" fill="url(#soap)"/>
+ <rect x="24" y="27" width="434" height="228" rx="22" fill="url(#top)"/>
+ <rect x="24" y="27" width="434" height="228" rx="22" fill="url(#grain)"/>
+ <path d="M54 258h373" stroke="#b39a71" opacity=".4"/>
+</g>
+<g transform="translate(220 445) rotate(8 225 140)">
+ <path d="M0 29Q0 9 22 8h399q22 0 25 24v217q0 28-27 28H25Q0 277 0 249z" fill="url(#soap)"/>
+ <rect y="3" width="447" height="226" rx="22" fill="url(#top)"/>
+ <rect y="3" width="447" height="226" rx="22" fill="url(#grain)"/>
+ <path d="M139 4h176v273H139z" fill="#f6f1df"/>
+ <path d="M139 228h176v49H139z" fill="#e0dbc8"/>
+ <g fill="#49533a" text-anchor="middle"><text x="227" y="91" font-family="Georgia,serif" font-size="30">sunny side</text><text x="227" y="113" font-family="Arial,sans-serif" font-size="9" letter-spacing="4">SOAP CO.</text><path d="M181 132h92" stroke="#b4b59e"/><text x="227" y="158" font-family="Georgia,serif" font-size="14">Oatmeal &amp; Honey</text><text x="227" y="180" font-family="Arial,sans-serif" font-size="8" letter-spacing="1.5">GOAT MILK SOAP</text><text x="227" y="204" font-family="Arial,sans-serif" font-size="8">4 OZ / 113 G</text></g>
+</g>
+<g transform="translate(690 650) rotate(-27)"><rect x="-11" y="-4" width="22" height="212" rx="11" fill="#aa8050"/><ellipse cy="-19" rx="41" ry="62" fill="url(#honey)"/><g fill="none" stroke="#9a6d31" stroke-width="6"><path d="M-27-60q27 10 54 0M-36-41q36 12 72 0M-39-21q39 13 78 0M-37 0q37 12 74 0M-29 20q29 9 58 0"/></g></g>
+<g fill="#d9bd8d" stroke="#bd9f70" stroke-width="1"><ellipse cx="159" cy="720" rx="7" ry="19" transform="rotate(25 159 720)"/><ellipse cx="182" cy="754" rx="6" ry="18" transform="rotate(-36 182 754)"/><ellipse cx="125" cy="764" rx="7" ry="19" transform="rotate(68 125 764)"/><ellipse cx="211" cy="789" rx="6" ry="17" transform="rotate(62 211 789)"/><ellipse cx="142" cy="807" rx="7" ry="18" transform="rotate(-13 142 807)"/><ellipse cx="92" cy="725" rx="6" ry="18" transform="rotate(-40 92 725)"/><ellipse cx="180" cy="825" rx="6" ry="18" transform="rotate(41 180 825)"/></g>
+<circle cx="726" cy="508" r="9" fill="#b99551" opacity=".65"/><ellipse cx="751" cy="533" rx="5" ry="7" fill="#b99551" opacity=".6"/>
+</svg>
